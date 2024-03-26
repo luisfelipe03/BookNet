@@ -4,7 +4,7 @@
 
 <img align="center" alt="Felipe-java" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"> -
 <img align="center" alt="Felipe-java" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg"> -
-<img align="center" alt="Felipe-java" height="60" width="80" src="https://h2database.com/html/images/h2-logo-2.png" />
+<img align="center" alt="Felipe-java" height="60" width="100" src="https://h2database.com/html/images/h2-logo-2.png" />
 
 
 ## Visão Geral
