@@ -7,27 +7,34 @@ import jakarta.persistence.*;
 import java.util.Date;
 import java.util.Objects;
 
-@Entity
+@Entity // Indica que a classe é uma entidade JPA
 public class Livro {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    private String titulo;
-    private String autor;
-    private String editora;
-    private int ano;
-    @Enumerated(EnumType.STRING)
-    private Generos genero;
-    private String idioma;
-    @OneToOne
-    private Avaliacao avaliacao;
-    private int paginas;
-    private double preco;
-    private Date inicioLeitura;
-    private Date fimLeitura;
-    @Enumerated(EnumType.STRING)
-    private Status status;
+    @Id // Indica que o campo abaixo é a chave primária da entidade
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Define a estratégia de geração de ID automático
+    private long id; // Identificador único do livro
+
+    private String titulo; // Título do livro
+    private String autor; // Nome do autor do livro
+    private String editora; // Editora do livro
+    private int ano; // Ano de publicação do livro
+
+    @Enumerated(EnumType.STRING) // Mapeia a enumeração para ser armazenada como uma string
+    private Generos genero; // Gênero do livro
+
+    private String idioma; // Idioma do livro
+
+    @OneToOne // Indica a relação um-para-um com a classe Avaliacao
+    private Avaliacao avaliacao; // Avaliação do livro
+
+    private int paginas; // Número de páginas do livro
+    private double preco; // Preço do livro
+    private Date inicioLeitura; // Data de início da leitura do livro
+    private Date fimLeitura; // Data de término da leitura do livro
+
+    @Enumerated(EnumType.STRING) // Mapeia a enumeração para ser armazenada como uma string
+    private Status status; // Status do livro
+
 
 
     public Livro() {
